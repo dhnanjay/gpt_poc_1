@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steno.AI</title>
+
+    <!-- Bootstrap 5 stylesheet -->
+    <link rel="stylesheet" href="./css/bootstrap.css" crossorigin="anonymous">
+<!--    <link rel="stylesheet" href="./css/c2.css" crossorigin="anonymous">-->
+</head>
+<body class="bg-dark bg-opacity-10 bg-gradient">
+<!-- Header -->
+<nav class="navbar navbar-expand-sm bg-light bg-gradient navbar-dark">
+    <div class="container-fluid">
+        <div class="row" style="width:100%;">
+            <div class="col-sm-2">
+                <img src="./css/images/StenoAI.png" alt="StenoAI"  style="width:165px;">
+            </div>
+            <div class="col-sm-8"></div>
+            <div class="col-sm-2 pt-3">
+                    <img src="./css/images/RAD_Logo_Horizontal.png" alt="Avatar Logo"  style="width:165px;">
+            </div>
+        </div>
+    </div>
+</nav>
+<br>
+<div class="container-fluid">
+<!-- bg-dark bg-opacity-10 bg-gradient">-->
+    <div class="row" style="height:100%;">
+        <div class="col-sm-2 p-3 border rounded bg-dark bg-opacity-10 bg-gradient">
+            <div class="row" style="width:100%;">
+                <div class="col p-2" >
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" class="form-control" style="width:99 %;">
+                </div>
+            </div>
+            <div class="row" style="width:100%;">
+                <div class="col p-2">
+                    <label for="app-select">Application:</label>
+                    <select class="form-control" id="app-select">
+                        <option>Accounting Memo</option>
+                        <option>Marketing Email</option>
+                        <option>Professional Bio</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row" style="width:100%;">
+                <div class="col p-2">
+                    <label for="style-select">Style:</label>
+                    <select class="form-control" id="style-select">
+                        <option>Formal</option>
+                        <option>Informal</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row" style="width:100%;">
+                <div class="col p-2">
+                    <label for="tone-select">Tone:</label>
+                    <select class="form-control" id="tone-select">
+                        <option>Positive</option>
+                        <option>Neutral</option>
+                        <option>Negative</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-sm-5 p-3 border-1 rounded">
+
+            <div class="row" style="width:100%;">
+                <div class="col-sm-12 p-2">
+                    <fieldset class="form-group border p-3">
+                        <legend class="text-nowrap w-auto px-1" style="font-size: 1.1rem;">Accounting Memo:</legend>
+                        <div class="row" style="width: 100%">
+                            <div class="col-sm-6 p-2">
+                                <label for="memo_to">To:</label>
+                                <input type="text" id="memo_to" class="form-control">
+                            </div>
+                            <div class="col-sm-6 p-2">
+                                <label for="memo_type">Type:</label>
+                                <select class="form-control" id="memo_type">
+                                    <option>Merger</option>
+                                    <option>SPAC Merger</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row" style="width: 100%">
+                            <div class="col-sm-6 p-2">
+                                <label for="memo_acquirer">Acquirer Name:</label>
+                                <input type="text" id="memo_acquirer" class="form-control">
+                            </div>
+                            <div class="col-sm-6 p-2">
+                                <label for="memo_subject">Subject:</label>
+                                <input type="text" id="memo_subject" class="form-control">
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+
+            <div class="row" style="width: 100%">
+                <div class="col-sm-12 p-2">
+                    <fieldset class="form-group border p-3">
+                        <legend class="text-nowrap w-auto px-1" style="font-size: 1.1rem;">Email Generation:</legend>
+                        <div class="row" style="width: 100%">
+                            <div class="col-sm-6 p-2">
+                                <label for="email_name">Name:</label>
+                                <input type="text" id="email_name" class="form-control">
+                            </div>
+                            <div class="col-sm-6 p-2">
+                                <label for="email_title">Title:</label>
+                                <input type="text" id="email_title" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row" style="width: 100%">
+                            <div class="col-sm-6 p-2">
+                                <label for="email_cname">Company Name:</label>
+                                <input type="text" id="email_cname" class="form-control">
+                            </div>
+                            <div class="col-sm-6 p-2">
+                                <label for="email_services">Services:</label>
+                                <input type="text" id="email_services" class="form-control">
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+
+            <div class="row" style="width: 100%">
+                <div class="col-sm-12 p-2">
+                    <fieldset class="form-group border p-3">
+                        <legend class="text-nowrap w-auto px-1" style="font-size: 1.1rem;">Profession Bio:</legend>
+                        <div class="row" style="width: 100%">
+                            <div class="col-sm-6 p-2">
+                                <label for="bio_name">First Name:</label>
+                                <input type="text" id="bio_name" class="form-control">
+                            </div>
+                            <div class="col-sm-6 p-2">
+                                <label for="bio_exp">Total Experience:</label>
+                                <input type="number" id="bio_exp" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row" style="width: 100%">
+                            <div class="col-sm-6 p-2">
+                                <label for="bio_degree">Highest Education:</label>
+                                <input type="text" id="bio_degree" class="form-control">
+                            </div>
+                            <div class="col-sm-6 p-2">
+                                <label for="bio_hobbies">Hobbies:</label>
+                                <input type="text" id="bio_hobbies" class="form-control">
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-info mt-3" onclick="getText()">Generate Text</button>
+
+        </div>
+
+        <div class="col-sm-5 p-1 rounded border-1">
+            <div class="row" style="width:100%;">
+                <div class="col">
+                    <textarea id="ai_text" class="form-control" rows="32"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="./js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
+<script src="./js/c2.js"></script>
+</body>
